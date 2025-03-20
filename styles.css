@@ -22,12 +22,12 @@ body{
 
 /* Start of header */
 header{
-    margin-top: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem 9%;
+    background-color: #161616;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,22 +60,34 @@ nav a.active{
 }
 
 @media(max-width:995px){
-    nav{
-        position: absolute;
-        top: 100%;
+    header{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        top: 0;
+    }
+    #navbar{
+        top: 0;
         right: 0;
         width: 40%;
-        border-bottom: 3px solid #b74b4b;
         padding: 1rem solid;
         background-color: #161616;
         border-top: 0.1rem solid rgba(0,0,0,0,1);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     nav.active{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     nav a {
-        display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
@@ -146,6 +158,33 @@ span{
     height: 100%;
     right: -8;
     animation: curssor 0.6 infinite;
+}
+
+@media (max-width:1000px){
+    .welcome-section{
+        gap: 4rem;
+    }
+}
+
+@media(max-width: 995px){
+    .welcome-section{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .welcome-section.home-content h3{
+        font-size: 2.5rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .social-icons a {
+        display: inline-block;
+        font-size: 24px;
+        color: white;
+        margin: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
 }
 
 /* Section two */
@@ -236,32 +275,6 @@ span{
     }
 }
 
-@media (max-width:1000px){
-    .welcome-section{
-        gap: 4rem;
-    }
-}
-
-@media(max-width: 995px){
-    .welcome-section{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-    .welcome-section.home-content h3{
-        font-size: 2.5rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
-    }
-    .social-icons a {
-        display: inline-block;
-        font-size: 24px;
-        color: white;
-        margin: 10px;
-        text-decoration: none;
-        text-align: center;
-    }
-}
 
 /* End of Sections */
 
