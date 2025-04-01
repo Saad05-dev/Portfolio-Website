@@ -1,0 +1,165 @@
+/* Start of global rules */
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html{
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body{
+    display: block;
+    line-height: 1.5;
+    color: #4d4e53;
+    min-width: 290px;
+}
+
+header{
+    margin: 10px;
+    font-size: 28.8px;
+    font-weight: thin;
+    color: black;
+    text-align: center;
+}
+
+section{
+    display: block;
+}
+
+
+
+
+/* End of global rules */
+
+/* Styling navbar */
+
+
+
+#navbar{
+    min-width: 290px;
+    width: 300px;
+    top: 0;
+    left: 0;
+    border-right: solid #99a2a2;
+    position: fixed;
+    height: 100%;
+}
+nav{
+    display: block;
+}
+
+
+nav ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    list-style: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav ul li{
+    position: relative;
+    border-top: black solid 1px;
+    padding-inline-start: 30px;
+    width: 100%;
+    cursor: pointer;
+    display: list-item;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #4d4e53;
+}
+
+nav li p{
+    margin: 10px 0 10px 0;
+}
+
+
+@media (max-width: 815px) {
+    #navbar{
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: #4d4e53 2px solid;
+    }
+    #navbar ul{
+        height: 207px;
+        border: 1px solid;
+    }
+}
+
+/* Start main  */
+
+
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+#main-doc header{
+    text-align: left;
+    margin: 0;
+}
+
+#main-doc section p{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 0.96rem;
+    margin: 15px;
+}
+#main-doc section h3{
+    margin-left: 15px;
+}
+
+#main-doc section li{
+    margin: 15px;
+    font-size: 0.96rem;
+}
+
+#main-doc section pre  {
+    background-color: #f7f7f7;
+}
+
+@media ( max-width: 815px) {
+    #main-doc{
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    #main-doc {
+        margin-left: -10px;
+      }
+
+    #main-doc section pre{
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
+/* End of main */

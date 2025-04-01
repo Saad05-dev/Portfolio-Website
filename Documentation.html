@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="Style/Documentation.css">
+</head>
+<body>
+
+    <!-- Start of NavBar -->
+    <nav id="navbar">
+        <header class="nav-header">C Documentation</header>
+        <ul>
+            <li><p><a href="#Introduction" class="nav-link">Introduction</a></p></li>
+            <li><p><a href="#What_You_Should_Already_Know" class="nav-link">What You Should Already Know</a></p></li>
+            <li><p><a href="#C_and_Other_Languages" class="nav-link">C and Other Languages</a></p></li>
+            <li><p><a href="#Hello_World" class="nav-link">Hello World</a></p></li>
+            <li><p><a href="#Variables" class="nav-link">Variables</a></p></li>
+            <li><p><a href="#Declaring_Variables" class="nav-link">Declaring Variables</a></p></li>
+            <li><p><a href="#Variable_Scope" class="nav-link">Variable Scope</a></p></li>
+            <li><p><a href="#Global_Variables" class="nav-link">Global Variables</a></p></li>
+            <li><p><a href="#Constants" class="nav-link">Constants</a></p></li>
+            <li><p><a href="#Data_Types" class="nav-link">Data Types</a></p></li>
+            <li><p><a href="#if...else_Statement" class="nav-link">if...else Statement</a></p></li>
+            <li><p><a href="#while_Statement" class="nav-link">while Statement</a></p></li>
+            <li><p><a href="#Function_Declarations" class="nav-link">Function Declarations</a></p></li>
+            <li><p><a href="#Reference" class="nav-link">Reference</a></p></li>
+        </ul>
+    </nav>
+
+    <!-- End pf NavBar -->
+
+    <!-- Start of main -->
+
+
+    <main id="main-doc">
+
+
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>C is a general-purpose, procedural programming language that has been widely used since its creation in the early 1970s. It provides low-level access to memory and is known for its efficiency and portability. C is used to develop system software, embedded systems, compilers, and applications that require high performance.</p>
+            <p>C has a simple syntax but offers powerful features such as pointers, memory management, and direct interaction with hardware. It serves as the foundation for many modern programming languages, including C++, Java, and Python.</p>
+            <h3>Key Features:</h2>
+            <ul>
+                <li><span>Procedural Programming: </span> Uses structured programming concepts like functions and loops.</li>
+                <li><span>Efficiency: </span>Compiled programs run faster and use fewer resources./li>
+                <li><span>Portability: </span> Code written in C can 
+                be compiled and executed on different platforms with minimal changes.</li>
+                <li><span>Low-Level Access: </span>Provides direct access to memory via pointers.</li>
+                <li><span>Modularity: </span> Supports functions and libraries for reusable code.</li>
+            </ul>
+
+        </section>
+
+        <section id="What_You_Should_Already_Know" class="main-section">
+            <header>What You Should Already Know</header>
+            <p>Before learning C, it is helpful to have the following background knowledge:</p>
+            <ul>
+                <li><span>Basic understanding of computers and programming concepts: </span>Knowing how software interacts with hardware is beneficial.</li>
+                <li><span>Familiarity with mathematical logic and problem-solving:</span>C involves working with numbers, loops, and logical conditions.</li>
+                <li><span>Experience with algorithms and flowcharts:</span>Helps in understanding how C programs are structured and executed.</li>
+            </ul>
+        </section>
+
+        <section id="C_and_Other_Languages" class="main-section">
+            <header>C and Other Languages</header>
+            <p>C has influenced many modern programming languages. Unlike Java, which is an object-oriented language with automatic memory management, C requires manual memory handling and follows a procedural approach. Understanding C helps in learning languages like C++, Java, and Python.</p>
+        </section>
+
+        <section id="Hello_World" class="main-section">
+            <header>Hello World</header>
+            <p>To get started with writing C programs, create a simple "Hello, World!" program:</p>
+            <pre><code>     #include &lt;stdio.h&gt;
+
+            int main() {
+                printf("Hello, World!\n");
+                return 0;
+            }
+            </code></pre>
+        </section>
+
+        <section id="Variables" class="main-section">
+            <header>Variables</header>
+            <p>Variables store data in memory. In C, you must declare a variable before using it.</p>
+            <pre><code>
+            int age = 25;
+            float height = 5.9;
+            char grade = 'A';
+            </code></pre>
+        </section>
+
+        <section id="Declaring_Variables" class="main-section">
+            <header>Declaring Variables</header>
+            <p>Variables are declared with a specific data type, such as int, float, char, etc.</p>
+        </section>
+
+        <section id="Variable_Scope" class="main-section">
+            <header>Variable Scope</header>
+            <p>Scope defines where a variable can be accessed. C has local and global scopes.</p>            </p>
+        </section>
+
+        <section id="Global_Variables" class="main-section">
+            <header>Global Variables</header>
+            <p>Global variables are declared outside any function and can be accessed anywhere in the program.</p>
+        </section>
+
+        <section id="Constants" class="main-section">
+            <header>Constants</header>
+            <p>Constants store fixed values that cannot be changed during execution.</p>
+            <pre><code>                 #define PI 3.14159
+                const int MAX = 100;</code></pre>
+        </section>
+
+        <section id="Data_Types" class="main-section">
+            <header>Data Types</header>
+            <p>C provides several data types:</p>
+            <ul>
+                <li><span>int</span> (Integer)</li>
+                <li><span>float</span> (Floating point number)</li>
+                <li><span>char</span>(Character)</li>
+                <li><span>double</span>(Double-precision floating point)</li>
+            </ul>
+        </section>
+
+        <section id="if...else_Statement" class="main-section">
+            <header>if...else Statement</header>
+            <p>Conditional statements execute code based on conditions.</p>
+            <pre><code>
+                if (age > 18) {
+                    printf("You are an adult.\n");
+                } else {
+                    printf("You are a minor.\n");
+                }
+            </code></pre>
+        </section>
+
+        <section id="while_Statement" class="main-section">
+            <header>while Statement</header>
+            <p>Loops execute a block of code repeatedly while a condition is true.</p>
+            <pre><code>
+                int i = 0;
+                while (i &lt; 5) {
+                    printf("%d\n", i);
+                    i++;
+                }
+            </code></pre>
+        </section>
+
+        <section id="Function_Declarations" class="main-section">
+            <header>Function Declarations</header>
+            <p>Functions modularize code for reusability and readability.</p>
+            <pre><code>
+                int add(int a, int b) {
+                    return a + b;
+                }
+            </code></pre>
+        </section>
+
+        <section id="Reference" class="main-section">
+            <header>Reference</header>
+            <p>For more details, refer to official <a href="https://cplusplus.com/reference/clibrary/" target="_blank" class="reference-link">C documentation</a> </p>
+        </section>
+
+    </main>
+
+    <!-- End of main -->
+</body>
+</html>
