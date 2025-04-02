@@ -24,7 +24,17 @@ section{
     height: 100vh;
     margin: 50px auto;
 }
-
+.saad{
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 150px;
+    padding: 5px;
+}
+.saad:hover{
+    transform: scale(1.1) ;
+    border: none;
+}
 
 /* Start of header */
 header{
@@ -45,16 +55,7 @@ header{
     box-shadow: 0px 4px 10px rgba(179, 39, 39, 0.1);
     z-index: 100;
 }
-.saad{
-    color: var(--main-color);
-    font-size: 25px;
-    margin-left: 150px;
-    padding: 5px;
-}
-.saad:hover{
-    transform: scale(1.1) ;
-    border: none;
-}
+
 header a{
     text-decoration: none;
     color: white;
@@ -122,6 +123,7 @@ header nav nav a{
     align-items: center;
     gap: 8rem;   
     z-index: 9;
+    color: white;
 }
 .welcome-section .home-content h1{
     font-size: 6rem;
@@ -166,7 +168,17 @@ span{
     right: -8;
     animation: curssor 0.6 infinite;
 }
-
+@keyframes words{
+    0%,20%{
+        content: "Web Developer";
+    }
+    21%,40%{
+        content: "Software Developer";
+    }
+    41%,60%{
+        content: "Web Designer";
+    }
+}
 @media (max-width:1000px){
     .welcome-section{
         gap: 4rem;
@@ -198,19 +210,20 @@ span{
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
     max-width: 80%;
     margin: auto;
-    background-color: #6a5c5d;
+    background-color: var(--secondary-color);
 }
 
 .project {
-    background: #434571;
-    padding: 15px;
+    background: var(--third-color);
     border-radius: 8px;
     max-height: 500px;
+    overflow: hidden;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -236,53 +249,60 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
+    margin-top: 150px;
+}
+.text{
+    color: white;
 }
 .icons{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-.social-icons a{
+.icons a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
+    width: 100%;
     height: 10rem;
-    background-color: transparent;
-    border: 0.2rem solid transparent;
-    font-size: 10rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
+    font-size: 5rem;
     color: white;
+    padding: 5px;
 }
 
-.social-icons a:hover{
+.social-icons a i:hover{
+    border: 0.2rem solid transparent;
     background-color: #b74b4b;
     color: #161616;
-    transform: scale(1.3) translateY(-5px);
+    transition: 0.3s ease;
+    border-radius: 50%;
+    transform: scale(1.1) translateY(-5px);
 }
 
 .social-icons p{
     font-size: 4rem;
-    padding-top: 5rem;
-    padding-right: 20px;
+    padding-right: 25px;
 }
-
-
-
-@keyframes words{
-    0%,20%{
-        content: "Web Developer";
-    }
-    21%,40%{
-        content: "Software Developer";
-    }
-    41%,60%{
-        content: "Web Designer";
+@media(max-width: 1500px)
+{
+    .icons{
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px; 
     }
 }
-
-
+@media(max-width: 995px)
+{
+    .icons
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /* End of Sections */
 
 /* Start of Footer */
@@ -299,4 +319,12 @@ footer{
     font-weight: 800;
     font-size: 1.8rem;
     background-color: rgb(104, 93, 93);
+}
+
+@media(max-width: 1300px)
+{
+    footer{
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
 }
