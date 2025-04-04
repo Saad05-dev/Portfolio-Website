@@ -214,14 +214,24 @@ span{
     gap: 20px;
     padding: 20px;
     max-width: 80%;
+    height: auto;
     margin: auto;
     background-color: var(--secondary-color);
+}
+@media(max-width: 995px)
+{
+    .portfolio{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        height: auto;
+        width: 80%;
+    }
 }
 
 .project {
     background: var(--third-color);
     border-radius: 8px;
-    max-height: 500px;
+    height: 400px;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
